@@ -7,10 +7,8 @@ function read_input(filename)
 end
 
 function simulate_day(fishes)
-    breed = fishes[1];
     fishes = circshift(fishes, (-1))
     fishes[7]+= fishes[9]
-    fishes[9] = breed
     fishes
 end
 

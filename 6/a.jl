@@ -7,11 +7,8 @@ end
 
 function simulate_day(fishes)
     breed = fishes.==0;
-
     number_of_new = sum(breed)
-
     fishes = (fishes + breed.*7).-1
-
     [fishes ones(1,number_of_new).*8]
 end
 
